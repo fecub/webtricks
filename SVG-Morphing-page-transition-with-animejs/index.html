@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SVG Morgin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+<body>
+    <svg id="morph" height="100%" width="100%" viewBox="0 0 507.99999 285.75001" preserveAspectRatio="none">
+        <path class="morph" d="m 0.00748241,10.743259 c 0,0 22.83218859,-1.5975214 86.24570859,-1.8570511 64.199119,-0.26274 121.226879,0.5063657 175.523309,0.5063657 58.2429,0 95.73554,0.4141577 168.62965,0.4141577 73.20715,0 77.482,1.2436487 77.482,1.2436487 L 508.05771,6.5681151 0.13617219,6.4929851 Z" fill="#002E3A"></path>
+    </svg>
+
+    <section id="sect1">
+        <h1>Give me a clicky</h1>
+        <p>Go on, go already! Click it ya hear!</p>
+
+        <button id="btn-click">Tappy Tappy</button>
+    </section>
+
+    <section id="sect2">
+        <button id="btn2-click">Go back</button>
+    </section>
+
+    <script>
+        var btn = document.getElementById('btn-click');
+        var btn2 = document.getElementById('btn2-click');
+        var sect1 = document.getElementById('sect1');
+        var sect2 = document.getElementById('sect2');
+        var overlay = document.getElementById('morph');
+
+        var morphing = anime({
+            targets: '.morph',
+            d:[
+                { value: 'm 0.00748241,153.58519 c 0,0 22.83218859,-32.18997 86.24570859,-32.4495 64.199119,-0.26274 121.226879,47.22186 175.523309,47.22186 58.2429,0 95.73554,-50.02204 168.62965,-50.02204 73.20715,0 77.482,86.40641 77.482,86.40641 L 507.91155,6.6533997 -0.00999083,6.5782737 Z'},
+                { value: 'm 0.00748241,303.25613 c 0,0 19.90892859,1.13519 83.32244859,0.87567 64.199119,-0.26274 124.150139,-3.05823 178.446569,-3.05823 58.2429,0 95.73554,0.25804 168.62965,0.25804 73.20715,0 77.58535,-0.17377 77.58535,-0.17377 L 508.0149,6.6017233 -0.00999083,6.5782733 Z'}
+            ],
+            easing: 'easeInOutQuint',
+            duration: 1000,
+            loop: false,
+            autoplay:false
+        });
+
+        btn.addEventListener('click', function() {
+            morphing.restart();
+            overlay.classList.add('pointer');
+            sect2.classList.add('animated', 'display', 'flipInY', 'delay-1s');
+        })
+
+        btn2.addEventListener('click', function() {
+            morphing.reverse();
+            morphing.play();
+
+            overlay.classList.remove('pointer');
+            sect2.classList.remove('animated', 'display', 'flipInY', 'delay-1s');
+        })
+    </script>
+</body>
+</html>
