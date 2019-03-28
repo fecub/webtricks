@@ -1,0 +1,18 @@
+@keyframes play50 {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -1200px 0px;
+  }
+}
+.shapeshifter {
+  animation-duration: 1657ms;
+  animation-timing-function: steps(50);
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+}
+.shapeshifter.play {
+  animation-name: play50;
+}

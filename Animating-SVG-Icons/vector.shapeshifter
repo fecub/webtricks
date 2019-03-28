@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "layers": {
+    "vectorLayer": {
+      "id": "65",
+      "name": "vector",
+      "type": "vector",
+      "width": 24,
+      "height": 24,
+      "children": [
+        {
+          "id": "66",
+          "name": "path",
+          "type": "path",
+          "pathData": "M 5.06 1.711 L 19.054 1.711 C 20.946 1.711 22.47 3.082 22.47 4.784 L 22.47 15.195 C 22.47 16.898 20.946 18.269 19.054 18.269 L 5.305 18.269 L 1.654 21.615 L 1.644 19.782 L 1.644 4.784 C 1.644 3.082 3.167 1.711 5.06 1.711 Z",
+          "fillColor": "#ffffff",
+          "strokeColor": "#000000",
+          "strokeWidth": 2,
+          "strokeMiterLimit": 10
+        },
+        {
+          "id": "67",
+          "name": "group",
+          "type": "group",
+          "children": [
+            {
+              "id": "68",
+              "name": "path_2",
+              "type": "mask",
+              "pathData": "M 5.06 1.711 L 19.054 1.711 C 20.946 1.711 22.47 3.082 22.47 4.784 L 22.47 15.195 C 22.47 16.898 20.946 18.269 19.054 18.269 L 5.305 18.269 L 1.654 21.615 L 1.644 19.782 L 1.644 4.784 C 1.644 3.082 3.167 1.711 5.06 1.711 Z"
+            },
+            {
+              "id": "69",
+              "name": "path_1",
+              "type": "path",
+              "pathData": "M -0.239 21.243 C -0.239 21.243 2.835 20.681 9.592 20.832 C 16.666 20.991 17.829 21.21 24.632 20.811 L 24.632 22.658 L -0.239 22.658 Z",
+              "fillColor": "#000",
+              "strokeColor": "#000000",
+              "strokeWidth": 0.379499
+            }
+          ]
+        },
+        {
+          "id": "533",
+          "name": "path_3",
+          "type": "path",
+          "pathData": "M 0.045 5.786 L 17.321 5.696",
+          "strokeColor": "#ffffff",
+          "strokeWidth": 2.6,
+          "trimPathEnd": 0
+        },
+        {
+          "id": "545",
+          "name": "path_4",
+          "type": "path",
+          "pathData": "M -0.045 9.607 L 13.973 9.563",
+          "strokeColor": "#ffffff",
+          "strokeWidth": 2.6,
+          "trimPathEnd": 0
+        },
+        {
+          "id": "557",
+          "name": "path_5",
+          "type": "path",
+          "pathData": "M 0.045 13.473 L 11.563 13.473",
+          "strokeColor": "#ffffff",
+          "strokeWidth": 2.6,
+          "trimPathEnd": 0
+        }
+      ]
+    },
+    "hiddenLayerIds": []
+  },
+  "timeline": {
+    "animation": {
+      "id": "73",
+      "name": "anim",
+      "duration": 1657,
+      "blocks": [
+        {
+          "id": "74",
+          "layerId": "69",
+          "propertyName": "pathData",
+          "startTime": 0,
+          "endTime": 700,
+          "interpolator": "FAST_OUT_SLOW_IN",
+          "type": "path",
+          "fromValue": "M -0.239 21.243 C -0.239 21.243 2.835 20.681 9.592 20.832 C 16.666 20.991 17.829 21.21 24.632 20.811 L 24.632 22.658 L -0.239 22.658 Z",
+          "toValue": "M -0.239 1.491 C -0.239 1.491 2.835 -6.913 9.592 -4.649 C 16.666 -2.279 17.829 1.006 24.632 -4.971 L 24.632 22.658 L -0.239 22.658 Z"
+        },
+        {
+          "id": "590",
+          "layerId": "533",
+          "propertyName": "trimPathEnd",
+          "startTime": 700,
+          "endTime": 1200,
+          "interpolator": "FAST_OUT_SLOW_IN",
+          "type": "number",
+          "fromValue": 0,
+          "toValue": 1
+        },
+        {
+          "id": "591",
+          "layerId": "545",
+          "propertyName": "trimPathEnd",
+          "startTime": 950,
+          "endTime": 1450,
+          "interpolator": "FAST_OUT_SLOW_IN",
+          "type": "number",
+          "fromValue": 0,
+          "toValue": 1
+        },
+        {
+          "id": "592",
+          "layerId": "557",
+          "propertyName": "trimPathEnd",
+          "startTime": 1057,
+          "endTime": 1657,
+          "interpolator": "FAST_OUT_SLOW_IN",
+          "type": "number",
+          "fromValue": 0,
+          "toValue": 1
+        }
+      ]
+    }
+  }
+}
