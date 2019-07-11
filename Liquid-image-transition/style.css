@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.landing {
+    display:flex;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.distortion {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    align-self: flex-end;
+}
+
+.distortion * {
+    transition: all 0.5s cubic-bezier(0.2, 1, 0.7, 1);
+    transition-property: opacity;
+    transition-delay: .3s;
+}
+
+.content:hover .distortion * {
+    opacity: 0.4;
+}
+
+.content > .textcontent {
+    position: relative;
+    margin-left: 10%;
+    margin-top: 8%;
+    color: rgb(151, 56, 56);
+    pointer-events: none;
+}
+.textcontent > p {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 15px;
+    color: rgb(31, 11, 11);
+}
+
+.textcontent > .header {
+    font-family: 'Comfortaa', cursive;
+    font-size: 6rem;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.textcontent > .desc {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: rgb(31, 11, 11);
+}
+.textcontent > .desc * {
+    opacity: 0;
+    transform: translate3d(400px, 0, 0);
+    transition: all 0.5s cubic-bezier(0.7, 1, 0.7, 1);
+    transition-property: transform, opacity;
+}
+.content:hover .textcontent * {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+
+/* .textcontent > .link * {
+    opacity: 0;
+    transform: translate3d(100px, 0, 0);
+    transition: all 0.5s cubic-bezier(0.2, 1, 0.7, 1);
+    transition-property: transform, opacity;
+    transition-delay: 0.3s;
+} */
+
+.textcontent > .link {
+    font-family: 'Lalezar', cursive;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0;
+    color: rgb(29, 12, 12);
+}
+
+.textcontent > .link * {
+    opacity: 0;
+    transform: translate3d(200px, 0, 0);
+    transition: all 0.5s cubic-bezier(0.2, 1, 0.7, 1);
+    transition-property: transform, opacity;
+    transition-delay: 0.3s;
+}
+
+
+
+.intro {
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    margin: 3rem;
+}
+
+.intro h2 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 50px;
+}
+
+.intro p {
+    font-size: 25px;
+    font-family: 'Varela Round', sans-serif;
+}
