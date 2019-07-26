@@ -14,7 +14,7 @@ templates with different libs for different use cases
 
 ## animate-css-perspective
 
-![css_perspective](/home/fecub/workspace/webtricks/readme_gifs/css_perspective.gif)
+![css_perspective](./readme_gifs/css_perspective.gif)
 
 
 
