@@ -1,0 +1,35 @@
+@mixin flexCenter($direction, $background:red) {  // default parameter auch möglich
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: $direction;
+    background: $background;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: lightblue;
+    height: 100vh;
+    width: 100vw;
+    @include flexCenter(row, rgb(45, 45, 100));
+
+    button {
+        background: $primaryButton;
+        color: $textColorLight;
+        width: 50vh;
+
+        &:hover {
+            background: $textColorLight;
+            color: $textColorDark;
+        }
+
+        &::after {
+            content: " hello";
+        }
+    }
+}

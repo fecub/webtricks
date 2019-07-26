@@ -1,0 +1,20 @@
+
+@import "./colors";
+@import "./header";
+
+.contact {
+    // -- ähnlich wie vererben
+    @extend header;
+    background: lightcoral; // überladen bzw. überschreiben möglich
+
+    // -- funktion includen von anderem Modul
+    // @include flexCenter(column, rgb(140, 185, 14));
+    // button {
+    //     background: $primaryBackColor;
+    //     color: $textColorLight;
+    // }
+
+
+    // -- rechnen auch möglich
+    width: 100vw - 10vw;
+}
