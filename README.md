@@ -24,7 +24,7 @@ templates with different libs for different use cases
 
 ## CSS_custom_properties_dynamic
 
-
+![](./readme_gifs/css_custom_prop.gif)
 
 ## flexbox
 
