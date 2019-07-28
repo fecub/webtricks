@@ -30,7 +30,7 @@ templates with different libs for different use cases
 
 ## flexbox
 
-![flexbox](/home/fecub/workspace/webtricks/readme_gifs/flexbox.gif)
+![flexbox](./readme_gifs/flexbox.gif)
 
 ## Liquid-image-transition
 
@@ -38,18 +38,18 @@ templates with different libs for different use cases
 
 ## sass_crashcourse
 
-![](/home/fecub/workspace/webtricks/readme_gifs/sass_crashcourse.gif)
+![](./readme_gifs/sass_crashcourse.gif)
 
 
 
 
 ## svg_mask
 
-![](/home/fecub/workspace/webtricks/readme_gifs/svg_mask.gif)
+![](./readme_gifs/svg_mask.gif)
 
 
 
 ## SVG-Morphing-page-transition-with-animejs
 
-![svg_morphing](/home/fecub/workspace/webtricks/readme_gifs/svg_morphing.gif)
+![svg_morphing](./readme_gifs/svg_morphing.gif)
 
