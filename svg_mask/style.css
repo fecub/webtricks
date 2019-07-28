@@ -24,7 +24,7 @@ svg rect {
 }
 
 svg > rect {
-    /* fill:red; */
+    fill:red;
 }
 
 video {
